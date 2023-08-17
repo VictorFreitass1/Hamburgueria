@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Hamburgueria</title>
-    <link rel="stylesheet" href="styles.css"> <!--Importação do arquivo .CSS nesse elemento-->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header> <!-- Elemento de bloco para criação do cabeçalho -->
-    <h2>Storys burguer</h2>
-    <nav> <!--Tag de bloco para criação de menu usando uma lista -->
-        <ul> <!-- Lista de forma não ordenada -->
-            <li>Home</li><!-- Conteúdo da lista  -->
-            <li>Cardápio</li>
-            <li>Sobre nós</li>
-            <li>Contato</li>
+<header>
+    <img src="img/LogomarcaVitinho.png" alt="Logo hamburgueria" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
-    </nav> <!-- Aqui finaliza o menu -->
+    </nav>
 </header>
-<main><!-- Tag que determina o conteúdo principal da página -->
-    <section><!-- Elemento de bloco para criação de uma seção -->
-        <article><!-- Tag que indica o início de um artigo --> 
-            <h3>A melhor Hamburgueria está aqui!</h3><!-- Tag que define o tamanho do título, vai de h1 a h6 -->
+<div class="banner">
+    <p>🎉 Promoção especial: 20% de desconto em todos os hambúrgueres esta semana! 🍔</p>
+</div>
+<main>
+    <section>
+        <article> 
+            <h3>A melhor Hamburgueria está aqui!</h3>
             <div class="carousel">
                 <div class="carousel-container">
                     <div><img class="carousel-item" src="/img/Lanche.jpg" alt="Foto do lanche"></div>
@@ -30,45 +33,50 @@
                 <button id="prevBtn" class="carousel-button">❮</button>
                 <button id="nextBtn" class="carousel-button">❯</button>
             </div>
-            <p>Conteúdo do artigo</p><!-- Tag que indica um parágrafo no texto -->
-            <ol><!-- Lista de forma ordenada -->
-                <li>Item 1</li><!-- Conteúdo da lista -->
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ol> <!-- Aqui finaliza a lista ordenada -->
-        </article><!-- Aqui finaliza o primeiro artigo da seção -->
-        <article><!-- O início de mais um artigo -->
-            <h3>Título do segundo artigo</h3>
-            <p>Conteúdo do segundo artigo</p>
-        </article> <!-- Aqui finaliza o segundo artigo da seção -->
-    </section> <!-- Encerramento da primeira seção do documento -->
-</main> <!-- Finalização do conteúdo principal da página -->
-
-<aside><!-- Tag que cria uma seção com conteúdo separado mas relacionado com o contexto principal -->
-    <h4>Conteúdos relacionados com o contexto principal</h4>
-    <ul>
-        <li>Página oficial de estudos</li>
-        <li>Item da lista</li>
-        <li>Item da lista</li>
-    </ul>
+            <div class="hamburgueria-container">
+                <h3>Unidade Itaquera</h3>
+                <p>Venha conhecer a melhor hamburgueria de São Paulo. <br>
+                Aproveite nossas promoções e consulte nossas
+                redes sociais para saber mais! <br>
+                Nossos hambúrgueres são preparados na hora do pedido, com carne 100% Angus, <br> 
+                na medida da fome, e vendidos a preços acessíveis, que  começam em R$ 22. </p>
+            </div>
+        </article>
+    </section> 
+</main> 
+<aside>
+    <div>
+        <h4>Horário de atendimento</h4>
+        <p>Segunda à quinta: 15h às 23h - Sextas: 15h às 01h - Sábados: 12h á 01h - Domingos: 14h às 22h</p>
+    </div>
 </aside>
+<footer>
+    <div>
+        <h4>Contatos</h4>
+        <p>Unidade Itaquera</p>
+        <p>Itaquera - São Paulo / SP</p>
+        <p>whatsaap (11) 94398-8653</p>
+        <p>victor.fsilva45@gmail.com</p>
+    </div>
+    <div>
+        <h4>Siga nossas redes sociais</h4>
+        <ul class="links">
+            <a href="#"><img src="img/instagram-icon.png" class="insta"></a>
+            <a href="#"><img src="img/whatsapp-icon.png" class="whatsaap"></a>
+            <a href="#"><img src="img/facebook-icon.png" class="facebook"></a>
+        </ul>
+    </div>
+    <div>
+        <h4>Categorias</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="about.html">Sobre nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+</footer>
 
-<footer><!-- Tag que indica o rodapé da página -->
-    <div><!-- Criando uma divisão para o rodapé -->
-        <p>Inscreva-se para receber noticias e novidades sobre a Trybe</p>
-        <form method="post"> <!-- Bloco para tags de formulário -->
-            <input type="text" name="nome" placeholder="Digite seu nome"><!-- Tag para recebimento de dados -->
-            <input type="email" name="email" placeholder="Digite seu email">
-            <input type="submit" name="enviar" value="Enviar">
-        </form>
-    </div> <!-- Fim da divisão -->
-    <div><!-- Outro início de divisão -->
-        <h3>Minha primeira página html</h3>
-        <span>Todos os direitos reservados</span><!-- Elemento em linha, usado para marcar uma parte de um texto ou uma parte de um documento -->
-    </div> <!-- Fim da segunda divisão -->
-</footer> <!-- Fechamento do rodapé -->
-
-<script src="script.js"></script> <!-- Tag onde importamos o arquivo Js da página -->
-
+<script src="script.js"></script>
 </body>
 </html>
