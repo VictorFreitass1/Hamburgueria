@@ -1,0 +1,46 @@
+/* ... (seus estilos existentes) ... */
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Defina o valor que preferir */
+    margin: 0 auto;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Defina a altura máxima que desejar */
+  }
+  
+  .carousel-button {
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
+  

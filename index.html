@@ -2,24 +2,34 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Estudos</title>
-    <link rel="stylesheet" href=".styles/styles.css"> <!--Importação do arquivo .CSS nesse elemento-->
+    <title>Hamburgueria</title>
+    <link rel="stylesheet" href="styles.css"> <!--Importação do arquivo .CSS nesse elemento-->
 </head>
 <body>
 <header> <!-- Elemento de bloco para criação do cabeçalho -->
-    <h2>Minha Página</h2>
+    <h2>Storys burguer</h2>
     <nav> <!--Tag de bloco para criação de menu usando uma lista -->
         <ul> <!-- Lista de forma não ordenada -->
             <li>Home</li><!-- Conteúdo da lista  -->
-            <li>Menu</li>
+            <li>Cardápio</li>
+            <li>Sobre nós</li>
+            <li>Contato</li>
         </ul>
     </nav> <!-- Aqui finaliza o menu -->
 </header>
 <main><!-- Tag que determina o conteúdo principal da página -->
     <section><!-- Elemento de bloco para criação de uma seção -->
         <article><!-- Tag que indica o início de um artigo --> 
-            <h3>Titulo do artigo</h3><!-- Tag que define o tamanho do título, vai de h1 a h6 -->
-            <img src="/estudos.jpg" alt="Foto de diplomas de estudos">
+            <h3>A melhor Hamburgueria está aqui!</h3><!-- Tag que define o tamanho do título, vai de h1 a h6 -->
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div><img class="carousel-item" src="/img/Lanche.jpg" alt="Foto do lanche"></div>
+                    <div><img class="carousel-item" src="/img/Lanche01.jpg" alt=""></div>
+                    <div><img class="carousel-item" src="/img/Lanche02.jpg" alt=""></div>
+                </div>
+                <button id="prevBtn" class="carousel-button">❮</button>
+                <button id="nextBtn" class="carousel-button">❯</button>
+            </div>
             <p>Conteúdo do artigo</p><!-- Tag que indica um parágrafo no texto -->
             <ol><!-- Lista de forma ordenada -->
                 <li>Item 1</li><!-- Conteúdo da lista -->
@@ -58,8 +68,7 @@
     </div> <!-- Fim da segunda divisão -->
 </footer> <!-- Fechamento do rodapé -->
 
-<script>
-    // Tag onde importamos o arquivo Js da página
-</script>
+<script src="script.js"></script> <!-- Tag onde importamos o arquivo Js da página -->
+
 </body>
 </html>
