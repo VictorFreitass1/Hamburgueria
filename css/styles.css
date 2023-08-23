@@ -201,14 +201,11 @@ ul a {
   color: white;
 }
 
-/* Seu CSS existente aqui */
-
-/* Adicione o seguinte bloco de estilo para ajustar o layout do menu */
 .menu {
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: rgba(80, 17, 17, 0.418);
+  border: 3px solid #290a0a;
   border-radius: 5px;
-  padding: 20px;
+  padding: 45px;
   margin: 10px;
   width: 200px;
   text-align: center;
@@ -218,16 +215,16 @@ ul a {
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
+  position: relative;
 }
 
 .menu img {
-  max-width: 200px;
-  height: auto;
+  max-width: 130%;
 }
 
 .menu h2 {
-  margin: 10px 0 5px 0;
-  font-size: 20px;
+  margin: 10px 1 5px 1;
+  font-size: 25px;
 }
 
 .menu-row {
@@ -239,13 +236,160 @@ ul a {
   margin: 0 auto;
 }
 
+.original-price,
+.discounted-price {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle; /* Isso alinha verticalmente os elementos */
+  margin: 5px;
+}
+
 .original-price {
   color: red;
   text-decoration: line-through;
-  margin: 5px 0;
 }
 
 .discounted-price {
   color: green;
-  margin: 5px 0;
 }
+.menu-price {
+  background-color: #ffffff;
+  width: 93%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0; /* Fixado na parte inferior */
+  left: 0; /* Alinhado à esquerda */
+  right: 0; /* Alinhado à direita */
+  }
+  
+
+.hamburgueria-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: 15px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hamburgueria-container p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hamburgueria-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hamburgueria-container label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.hamburgueria-container input,
+.hamburgueria-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hamburgueria-container textarea {
+  resize: vertical;
+}
+
+.hamburgueria-container button {
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hamburgueria-container button:hover {
+  background-color: #ff8500;
+}
+
+
+.contact-page {
+  background-image: url('/img/snack-2635035.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hamburgueria-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: 15px;
+  background-color: #290a0a;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hamburgueria-contato p {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .hamburgueria-contato form { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  .hamburgueria-contato label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .hamburgueria-contato input,
+  .hamburgueria-contato textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+  
+  .hamburgueria-contato textarea {
+      resize: vertical;
+  }
+  
+  .hamburgueria-contato button {
+    width: 70%;
+    font-size: 20px;
+    background-color: #d600009f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hamburgueria-contato button:hover {
+    background-color: #ff8500;
+  }
+
+  .titulo-contato{
+    color: #ff0000c5;
+  }

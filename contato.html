@@ -5,7 +5,7 @@
     <title>Contato</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
+<body class="contact-page">
     <header>
         <img src="img/LogomarcaVitinho.png" alt="Logo hamburgueria" class="logo">
         <nav>
@@ -17,5 +17,50 @@
             </ul>
         </nav>
     </header>
+    
+    <h3 class="titulo-contato">SURGIU ALGUMA DUVIDA?</h3>
+    <div class="hamburgueria-contato">
+        <p>Preencha o formulário abaixo para entrar em contato conosco:</p>
+        
+        <form action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Ex: João Silva" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Ex: joaosilva@gmail.com" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="telefone" id="telefone" name="telefone" placeholder="Ex: (11) 99999-9999" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <svg class="background-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#290a0a" fill-opacity="1" d="M0,32L34.3,37.3C68.6,43,137,53,206,85.3C274.3,117,343,171,411,181.3C480,192,549,160,617,133.3C685.7,107,754,85,823,90.7C891.4,96,960,128,1029,149.3C1097.1,171,1166,181,1234,160C1302.9,139,1371,85,1406,58.7L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+    </svg>
+    <footer>
+        <div>
+            <h4>Siga-nos nas redes sociais</h4>
+            <div class="links">
+                <a href="#" class="instagram"><img src="img/instagram-icon.png" alt="Instagram"></a>
+                <a href="#" class="facebook"><img src="img/facebook-icon.png" alt="Facebook"></a>
+                <a href="#" class="whatsaap"><img src="img/whatsapp-icon.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <div>
+            <h4>Horário de Funcionamento</h4>
+            <p>Segunda a Sábado: 11h - 22h</p>
+            <p>Domingo: 12h - 20h</p>
+        </div>
+        <div>
+            <h4>Contato</h4>
+            <p>Whatsaap (11) 94398-8653</p>
+            <p>Email: contato@hamburgueria.com</p>
+            <p>Itaquera - São Paulo / SP</p>
+        </div>
+    </footer>      
 </body>
 </html>
