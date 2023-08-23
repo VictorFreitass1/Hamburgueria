@@ -50,6 +50,10 @@ h3  {
   font-size: 30px;
 }
 
+.background-svg {
+  margin-bottom: -5px; /* Reduz a margem inferior em 5 pixels */
+}
+
 footer {
   background-color: #290a0a;
   color: #fff;
@@ -57,6 +61,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  margin-top: -115px;
 }
 
 footer div:nth-child(1) {
@@ -157,16 +162,13 @@ footer div:nth-child(3) {
 .hamburgueria-container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2px;
   text-align: center;
+  margin-top: 15px;
 }
 
 .hamburgueria-container h3 {
   font-size: 24px;
-  color: #333;
   margin-bottom: 10px;
 }
 
@@ -197,4 +199,53 @@ a:hover {
 ul a {
   text-decoration: none;
   color: white;
+}
+
+/* Seu CSS existente aqui */
+
+/* Adicione o seguinte bloco de estilo para ajustar o layout do menu */
+.menu {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.menu img {
+  max-width: 200px;
+  height: auto;
+}
+
+.menu h2 {
+  margin: 10px 0 5px 0;
+  font-size: 20px;
+}
+
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.original-price {
+  color: red;
+  text-decoration: line-through;
+  margin: 5px 0;
+}
+
+.discounted-price {
+  color: green;
+  margin: 5px 0;
 }
